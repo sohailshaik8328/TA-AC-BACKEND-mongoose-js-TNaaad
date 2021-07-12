@@ -3,6 +3,6 @@ let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 let useSchema = new Schema({
-    password : {min : 5, max : 15},
+    password : {minlength : 5, maxlength : 15},
     createAt : {type : Date, default : new Date()}
 })
